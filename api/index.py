@@ -7,7 +7,9 @@ app = Flask(__name__)
 app.secret_key = 'quizbridgeix_secret_key'  # Replace with env var for production
 
 # Use absolute base path for serverless compatibility
-BASE_DIR = os.path.dirname(os.path.abspath(__file__))
+base_dir = os.path.dirname(os.path.abspath(__file__))
+quiz_path = os.path.join(base_dir, '..', 'quizzes', f'{unit}.json')
+
 
 def load_quiz(unit):
     try:
