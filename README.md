@@ -34,7 +34,7 @@ quizbridge_ix/ ├── app.py # Main Flask app ├── quizzes/ # Folder for
 git clone https://github.com/your-username/quizbridge_ix.git
 cd quizbridge_ix
 
-##  2. Create a virtual environment
+Create a virtual environment
 
 python -m venv venv
 
@@ -46,16 +46,16 @@ CMD: venv\Scripts\activate.bat
 
 Unix/Mac: source venv/bin/activate
 
-3. Install dependencies
+Install dependencies
 
 pip install -r requirements.txt
 
-4. Run the app
+Run the app
 python app.py
 
 Visit: http://127.0.0.1:5000
 
-## 📊 Adding New Quizzes
+📊 Adding New Quizzes
 Drop new JSON files into the /quizzes/ folder using this format:
 {
   "title": "Quiz Title",
