@@ -6,16 +6,16 @@ import sys
 # Set base path
 BASE_DIR = os.path.dirname(os.path.abspath(__file__))
 
-# Configure Flask with absolute template and static paths
+# Configure Flask with absolute paths
 app = Flask(
     __name__,
     template_folder=os.path.join(BASE_DIR, '..', 'templates'),
     static_folder=os.path.join(BASE_DIR, '..', 'static')
 )
 
-app.secret_key = 'quizbridgeix_secret_key'  # Replace with an env var for security
+app.secret_key = 'quizbridgeix_secret_key'  # Use environment variable in production
 
-# Load quiz from the quizzes folder
+# Load quiz from JSON file
 def load_quiz(unit):
     try:
         quiz_path = os.path.join(BASE_DIR, '..', 'quizzes', f'{unit}.json')
@@ -25,12 +25,10 @@ def load_quiz(unit):
         print(f"[ERROR] Could not load quiz '{unit}': {e}", file=sys.stderr)
         return None
 
-# Home route
 @app.route('/')
 def home():
     return render_template('home.html')
 
-# Quiz route
 @app.route('/quiz/<unit>', methods=['GET', 'POST'])
 def quiz(unit):
     quiz_data = load_quiz(unit)
@@ -44,7 +42,6 @@ def quiz(unit):
 
     return render_template('quiz.html', quiz=quiz_data, unit=unit)
 
-# Results route
 @app.route('/results/<unit>')
 def results(unit):
     quiz_data = load_quiz(unit)
@@ -70,7 +67,6 @@ def results(unit):
 
     return render_template('results.html', results=results, score=score, total=total, unit=unit)
 
-# Static dashboard preview
 @app.route('/dashboard')
 def dashboard():
     quiz_scores = [
@@ -87,12 +83,7 @@ def dashboard():
 
     return render_template("dashboard.html", labels=labels, scores=scores, totals=totals)
 
-# Global error logging for serverless function visibility
 @app.errorhandler(Exception)
 def handle_error(e):
     print(f"[SERVER ERROR] {e}", file=sys.stderr)
     return "Internal Server Error", 500
-
-# Required for Vercel's serverless handler
-def handler(environ, start_response):
-    return app(environ, start_response)
