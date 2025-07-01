@@ -1,29 +1,36 @@
 from flask import Flask, render_template, request, redirect, url_for, session
-import json
 import os
+import json
 import sys
 
-app = Flask(__name__)
-app.secret_key = 'quizbridgeix_secret_key'  # Replace with env var for production
+# Set base path
+BASE_DIR = os.path.dirname(os.path.abspath(__file__))
 
-# Use absolute base path for serverless compatibility
-base_dir = os.path.dirname(os.path.abspath(__file__))
-quiz_path = os.path.join(base_dir, '..', 'quizzes', f'{unit}.json')
+# Configure Flask with absolute template and static paths
+app = Flask(
+    __name__,
+    template_folder=os.path.join(BASE_DIR, '..', 'templates'),
+    static_folder=os.path.join(BASE_DIR, '..', 'static')
+)
 
+app.secret_key = 'quizbridgeix_secret_key'  # Replace with an env var for security
 
+# Load quiz from the quizzes folder
 def load_quiz(unit):
     try:
-        quizzes_path = os.path.join(BASE_DIR, '..', 'quizzes', f'{unit}.json')
-        with open(quizzes_path) as f:
+        quiz_path = os.path.join(BASE_DIR, '..', 'quizzes', f'{unit}.json')
+        with open(quiz_path, encoding='utf-8') as f:
             return json.load(f)
     except Exception as e:
         print(f"[ERROR] Could not load quiz '{unit}': {e}", file=sys.stderr)
         return None
 
+# Home route
 @app.route('/')
 def home():
     return render_template('home.html')
 
+# Quiz route
 @app.route('/quiz/<unit>', methods=['GET', 'POST'])
 def quiz(unit):
     quiz_data = load_quiz(unit)
@@ -37,14 +44,15 @@ def quiz(unit):
 
     return render_template('quiz.html', quiz=quiz_data, unit=unit)
 
+# Results route
 @app.route('/results/<unit>')
 def results(unit):
     quiz_data = load_quiz(unit)
     user_answers = session.get('responses', {})
     score = 0
     total = len(quiz_data['quiz'])
-
     results = []
+
     for idx, question in enumerate(quiz_data['quiz']):
         q_key = f'q{idx}'
         correct = str(question['answer'][0])
@@ -62,15 +70,15 @@ def results(unit):
 
     return render_template('results.html', results=results, score=score, total=total, unit=unit)
 
+# Static dashboard preview
 @app.route('/dashboard')
 def dashboard():
-    # Placeholder data — replace with persistent logic later
     quiz_scores = [
         {"unit": "AI Reflection", "score": 12, "total": 15},
         {"unit": "Data Literacy", "score": 10, "total": 15},
         {"unit": "Math for AI", "score": 9, "total": 15},
         {"unit": "Generative AI", "score": 13, "total": 15},
-        {"unit": "Intro to Python", "score": 14, "total": 15},
+        {"unit": "Intro to Python", "score": 14, "total": 15}
     ]
 
     labels = [q["unit"] for q in quiz_scores]
@@ -79,11 +87,12 @@ def dashboard():
 
     return render_template("dashboard.html", labels=labels, scores=scores, totals=totals)
 
+# Global error logging for serverless function visibility
 @app.errorhandler(Exception)
 def handle_error(e):
     print(f"[SERVER ERROR] {e}", file=sys.stderr)
     return "Internal Server Error", 500
 
-# Required for Vercel serverless function export
+# Required for Vercel's serverless handler
 def handler(environ, start_response):
     return app(environ, start_response)
