@@ -11,11 +11,14 @@ QUIZ_FOLDER = 'quizzes'
 
 def load_quiz(unit):
     try:
-        with open(os.path.join(QUIZ_FOLDER, f'{unit}.json')) as f:
+        base_dir = os.path.dirname(os.path.abspath(__file__))
+        quizzes_path = os.path.join(base_dir, '..', 'quizzes', f'{unit}.json')
+        with open(quizzes_path) as f:
             return json.load(f)
     except Exception as e:
         print(f"[ERROR] Could not load quiz: {e}")
         return None
+
 
 @app.route('/')
 def home():
