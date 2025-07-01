@@ -1,24 +1,22 @@
-# app.py
 from flask import Flask, render_template, request, redirect, url_for, session
 import json
 import os
-from datetime import datetime
+import sys
 
 app = Flask(__name__)
-app.secret_key = 'quizbridgeix_secret_key'  # Change this for production
+app.secret_key = 'quizbridgeix_secret_key'  # Replace with env var for production
 
-QUIZ_FOLDER = 'quizzes'
+# Use absolute base path for serverless compatibility
+BASE_DIR = os.path.dirname(os.path.abspath(__file__))
 
 def load_quiz(unit):
     try:
-        base_dir = os.path.dirname(os.path.abspath(__file__))
-        quizzes_path = os.path.join(base_dir, '..', 'quizzes', f'{unit}.json')
+        quizzes_path = os.path.join(BASE_DIR, '..', 'quizzes', f'{unit}.json')
         with open(quizzes_path) as f:
             return json.load(f)
     except Exception as e:
-        print(f"[ERROR] Could not load quiz: {e}")
+        print(f"[ERROR] Could not load quiz '{unit}': {e}", file=sys.stderr)
         return None
-
 
 @app.route('/')
 def home():
@@ -45,7 +43,6 @@ def results(unit):
     total = len(quiz_data['quiz'])
 
     results = []
-
     for idx, question in enumerate(quiz_data['quiz']):
         q_key = f'q{idx}'
         correct = str(question['answer'][0])
@@ -65,7 +62,7 @@ def results(unit):
 
 @app.route('/dashboard')
 def dashboard():
-    # Simulated quiz performance data (replace with DB logic later)
+    # Placeholder data — replace with persistent logic later
     quiz_scores = [
         {"unit": "AI Reflection", "score": 12, "total": 15},
         {"unit": "Data Literacy", "score": 10, "total": 15},
@@ -73,13 +70,18 @@ def dashboard():
         {"unit": "Generative AI", "score": 13, "total": 15},
         {"unit": "Intro to Python", "score": 14, "total": 15},
     ]
-    
+
     labels = [q["unit"] for q in quiz_scores]
     scores = [q["score"] for q in quiz_scores]
     totals = [q["total"] for q in quiz_scores]
 
     return render_template("dashboard.html", labels=labels, scores=scores, totals=totals)
 
+@app.errorhandler(Exception)
+def handle_error(e):
+    print(f"[SERVER ERROR] {e}", file=sys.stderr)
+    return "Internal Server Error", 500
 
-if __name__ == '__main__':
-    app.run(debug=True)
+# Required for Vercel serverless function export
+def handler(environ, start_response):
+    return app(environ, start_response)
