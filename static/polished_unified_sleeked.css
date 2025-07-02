@@ -1,0 +1,141 @@
+/* Fullscreen Matte Black Canvas */
+html, body {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  background-color: #0A0A0A !important;
+  font-family: 'Cinzel Decorative', 'Segoe UI', Tahoma, sans-serif;
+  color: #FFD700 !important;
+  overflow-x: hidden;
+  overflow-y: auto;
+  position: relative;
+}
+
+/* Blackout all containers and wrappers */
+.container,
+.container-fluid,
+.row,
+.col,
+.section,
+.main-content,
+.quiz-wrapper,
+.quiz-container,
+#content,
+.page,
+body > div {
+  background-color: #0A0A0A !important;
+  color: #FFD700 !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  border: none !important;
+}
+
+/* Quiz Card Styling */
+.card,
+.quiz-card,
+.card-body,
+.question-block {
+  background: linear-gradient(135deg, #1C1C1C, #2B2B2B) !important;
+  border-radius: 0.75rem;
+  box-shadow: 0 0 15px rgba(255, 215, 0, 0.25);
+  color: #FFD700 !important;
+  padding: 1rem;
+  margin-bottom: 1.5rem;
+  position: relative;
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Ripple Glow Hover */
+.card::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 0;
+  height: 0;
+  background: rgba(255, 215, 0, 0.2);
+  border-radius: 50%;
+  transform: translate(-50%, -50%);
+  transition: width 0.5s ease, height 0.5s ease;
+  z-index: 0;
+}
+
+.card:hover::after {
+  width: 300%;
+  height: 300%;
+}
+
+.card:hover {
+  transform: scale(1.02);
+  box-shadow: 0 0 25px rgba(255, 215, 0, 0.4);
+}
+
+/* Tab Styling */
+.nav-tabs .nav-link,
+.nav-pills .nav-link {
+  background: linear-gradient(120deg, #1C1C1C, #2B2B2B) !important;
+  color: #FFD700 !important;
+  border: 1px solid #FFD700 !important;
+  box-shadow: 0 0 10px rgba(255, 215, 0, 0.3);
+  border-radius: 0.4rem;
+  margin: 0 4px;
+  font-weight: bold;
+}
+
+.nav-tabs .nav-link.active,
+.nav-pills .nav-link.active {
+  background-color: #FFD700 !important;
+  color: #0A0A0A !important;
+}
+
+/* Button Styling */
+.btn-primary, .btn-success {
+  background-color: #FFD700 !important;
+  color: #0A0A0A !important;
+  border: none !important;
+  font-weight: bold;
+}
+
+.btn-primary:hover, .btn-success:hover {
+  background-color: #e6c200 !important;
+  color: #000 !important;
+}
+
+/* Form Inputs */
+.form-check-input:checked {
+  background-color: #FFD700 !important;
+  border-color: #FFD700 !important;
+}
+
+/* Headings & Titles */
+h1, h2, h5, .card-title {
+  color: #FFD700 !important;
+  font-weight: 700;
+}
+
+/* Footer */
+footer {
+  color: #888 !important;
+  background-color: transparent;
+  border-top: none !important;
+}
+
+/* Background Particles */
+body::before {
+  content: '';
+  position: fixed;
+  width: 200%;
+  height: 200%;
+  background-image: radial-gradient(circle, rgba(255, 215, 0, 0.1) 1px, transparent 1px);
+  background-size: 12px 12px;
+  animation: shimmerParticles 25s linear infinite;
+  z-index: 0;
+  pointer-events: none;
+}
+
+@keyframes shimmerParticles {
+  0% { transform: translate(0, 0); }
+  100% { transform: translate(-200px, -200px); }
+}
