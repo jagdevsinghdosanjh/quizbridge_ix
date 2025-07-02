@@ -47,7 +47,7 @@ body > div {
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-/* Ripple Glow Hover */
+/* Ripple Glow Hover
 .card::after {
   content: "";
   position: absolute;
@@ -60,6 +60,26 @@ body > div {
   transform: translate(-50%, -50%);
   transition: width 0.5s ease, height 0.5s ease;
   z-index: 0;
+}
+
+.card:hover::after {
+  width: 300%;
+  height: 300%;
+} */
+/* Ripple Glow Hover — fixed for radio button accessibility */
+.card::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 0;
+  height: 0;
+  background: rgba(255, 215, 0, 0.2);
+  border-radius: 50%;
+  transform: translate(-50%, -50%);
+  transition: width 0.5s ease, height 0.5s ease;
+  pointer-events: none;     /* 👈 Keeps it from blocking clicks */
+  z-index: 0;               /* 👈 Places it underneath form elements */
 }
 
 .card:hover::after {
