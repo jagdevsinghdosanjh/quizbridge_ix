@@ -1,0 +1,88 @@
+/* Universal Reset for Full Dark Base */
+html, body {
+  height: 100%;
+  background-color: #0A0A0A !important;
+  margin: 0;
+  padding: 0;
+  font-family: 'Cinzel Decorative', 'Segoe UI', Tahoma, sans-serif;
+  color: #FFD700 !important;
+}
+
+/* Container / Wrapper Styling */
+.container, .main-content, .wrapper {
+  background-color: #0A0A0A !important;
+  color: #FFD700 !important;
+}
+
+/* Glossy Card Styling */
+.card {
+  background: linear-gradient(135deg, #1C1C1C, #2B2B2B) !important;
+  border-radius: 0.75rem !important;
+  box-shadow: 0 0 15px rgba(255, 215, 0, 0.25) !important;
+  color: #FFD700 !important;
+  transition: all 0.3s ease;
+}
+
+/* Hover Shine Effect */
+.card:hover {
+  box-shadow: 0 0 25px rgba(255, 215, 0, 0.4) !important;
+  transform: scale(1.02);
+}
+
+/* Tab Styling */
+.nav-tabs .nav-link,
+.nav-pills .nav-link {
+  background: linear-gradient(120deg, #1C1C1C, #2B2B2B) !important;
+  border: 1px solid #FFD700 !important;
+  color: #FFD700 !important;
+  border-radius: 0.4rem;
+  font-weight: bold;
+  box-shadow: 0 0 10px rgba(255, 215, 0, 0.2);
+  margin-right: 4px;
+}
+
+/* Active Tabs */
+.nav-tabs .nav-link.active,
+.nav-pills .nav-link.active {
+  background-color: #FFD700 !important;
+  color: #0A0A0A !important;
+  box-shadow: 0 0 15px rgba(255, 215, 0, 0.6);
+}
+
+/* Headings & Titles */
+h1, h2, h5, .card-title {
+  color: #FFD700 !important;
+  font-weight: 700;
+}
+
+/* Buttons */
+.btn-primary, .btn-success {
+  background-color: #FFD700 !important;
+  color: #0A0A0A !important;
+  border: none !important;
+  font-weight: bold;
+}
+
+.btn-primary:hover, .btn-success:hover {
+  background-color: #e6c200 !important;
+  color: #000 !important;
+}
+
+/* Form Elements */
+.form-check-input:checked {
+  background-color: #FFD700 !important;
+  border-color: #FFD700 !important;
+}
+
+footer {
+  font-size: 0.9rem;
+  color: #888 !important;
+  background-color: transparent;
+}
+
+/* Optional: For animated glow (if needed) */
+@keyframes glowPulse {
+  0% { box-shadow: 0 0 10px rgba(255, 215, 0, 0.2); }
+  50% { box-shadow: 0 0 20px rgba(255, 215, 0, 0.5); }
+  100% { box-shadow: 0 0 10px rgba(255, 215, 0, 0.2); }
+}
