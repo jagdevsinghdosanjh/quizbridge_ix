@@ -1,0 +1,94 @@
+/* Root & Body Reset */
+html, body {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  background-color: #0A0A0A !important; /* Total matte black */
+  font-family: 'Cinzel Decorative', 'Segoe UI', Tahoma, sans-serif;
+  color: #FFD700 !important;
+  overflow-x: hidden;
+}
+
+/* Blackout all common containers */
+.container,
+.container-fluid,
+.row,
+.col,
+.section,
+.quiz-wrapper,
+.quiz-container,
+.main-content,
+#content,
+.page {
+  background-color: #0A0A0A !important;
+  color: #FFD700 !important;
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
+/* Ensure quiz question blocks follow black theme */
+.quiz-card,
+.question-block,
+.question-area,
+.card,
+.card-body {
+  background: linear-gradient(135deg, #1C1C1C, #2B2B2B) !important; /* Glossy reflective black */
+  color: #FFD700 !important;
+  border-radius: 0.75rem;
+  box-shadow: 0 0 15px rgba(255, 215, 0, 0.25);
+  padding: 1rem;
+  margin-bottom: 1.5rem;
+  position: relative;
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Ripple Glow on Hover */
+.card:hover::after {
+  width: 300%;
+  height: 300%;
+}
+
+.card:hover {
+  transform: scale(1.02);
+  box-shadow: 0 0 25px rgba(255, 215, 0, 0.4);
+}
+
+/* Tabs Styling */
+.nav-tabs .nav-link,
+.nav-pills .nav-link {
+  background: linear-gradient(120deg, #1C1C1C, #2B2B2B) !important;
+  color: #FFD700 !important;
+  border: 1px solid #FFD700 !important;
+  box-shadow: 0 0 10px rgba(255, 215, 0, 0.3);
+}
+
+/* Active Tabs */
+.nav-tabs .nav-link.active,
+.nav-pills .nav-link.active {
+  background-color: #FFD700 !important;
+  color: #0A0A0A !important;
+}
+
+/* Footer & Utility */
+footer {
+  color: #888 !important;
+  background-color: transparent;
+}
+
+h1, h2, h5, .card-title {
+  color: #FFD700 !important;
+  font-weight: 700;
+}
+
+/* Buttons */
+.btn-primary, .btn-success {
+  background-color: #FFD700 !important;
+  color: #0A0A0A !important;
+}
+
+.btn-primary:hover, .btn-success:hover {
+  background-color: #e6c200 !important;
+  color: #000 !important;
+}
