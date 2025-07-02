@@ -1,4 +1,73 @@
+/* static/new_style.css */
+
+/* Typography and Base Background */
 body {
+  font-family: 'Cinzel Decorative', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #0A0A0A !important; /* Matte black */
+  color: #FFD700 !important; /* Gold text */
+  margin: 0;
+  padding: 0;
+}
+
+/* Card Styling */
+.card {
+  background: linear-gradient(to bottom right, #1C1C1C, #2B2B2B) !important; /* Reflective black */
+  border-radius: 0.5rem !important;
+  box-shadow: 0 0 12px rgba(255, 215, 0, 0.2) !important;
+  color: #FFD700 !important;
+  transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+}
+
+/* Hover Effect */
+.card:hover {
+  transform: scale(1.02);
+  box-shadow: 0 0 18px rgba(255, 215, 0, 0.4);
+}
+
+/* Headings and Titles */
+h1, h2, h5, .card-title {
+  font-weight: 600;
+  color: #FFD700 !important;
+}
+
+/* Buttons */
+.btn-primary, .btn-success {
+  background-color: #FFD700 !important;
+  color: #0A0A0A !important;
+  border: none !important;
+  font-weight: bold;
+}
+
+.btn-primary:hover, .btn-success:hover {
+  background-color: #e6c200 !important;
+  color: #000 !important;
+}
+
+/* Form Inputs */
+.form-check-input:checked {
+  background-color: #FFD700 !important;
+  border-color: #FFD700 !important;
+}
+
+/* Footer and Utility Text */
+footer {
+  margin-top: 2rem;
+  font-size: 0.9rem;
+  color: #888 !important;
+}
+
+.text-success, .text-danger {
+  font-weight: 600;
+  color: #FFD700 !important;
+}
+
+/* Optional container fallback */
+.container, .main-content {
+  background-color: #0A0A0A !important;
+  color: #FFD700 !important;
+}
+
+/* body {
   font-family: 'Cinzel Decorative', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   background-color: #0A0A0A; /* Dull matte black */
   color: #FFD700; /* Gold text */
@@ -48,4 +117,4 @@ footer {
 .form-check-input:checked {
   background-color: #FFD700;
   border-color: #FFD700;
-}
+} */
