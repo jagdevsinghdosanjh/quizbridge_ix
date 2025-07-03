@@ -3,67 +3,15 @@
   "type": "quiz",
   "quiz": [
     {
-      "question": "What is the primary objective of the AI curriculum for Class IX?",
+      "question": "What is Generative AI?",
       "options": [
-        "To teach advanced programming languages",
-        "To develop readiness for understanding and appreciating AI and its applications",
-        "To focus solely on data science",
-        "To prepare students for competitive exams"
+        "AI that analyzes data",
+        "AI that generates new content like images, text, or music",
+        "AI that focuses on robotics",
+        "AI that predicts future outcomes"
       ],
       "answer": [1],
-      "explanation": "The primary objective of the AI curriculum is to help students understand and appreciate Artificial Intelligence and its applications in daily life through interactive and hands-on learning.",
-      "type": "singleSelect"
-    },
-    {
-      "question": "Which of the following is NOT one of the three domains of AI introduced in the curriculum?",
-      "options": ["Data", "Computer Vision", "Natural Language Processing", "Quantum Computing"],
-      "answer": [3],
-      "explanation": "The three domains of AI introduced in the curriculum are Data, Computer Vision, and Natural Language Processing. Quantum Computing is not included in this curriculum.",
-      "type": "singleSelect"
-    },
-    {
-      "question": "What is the first step in the AI Project Cycle?",
-      "options": ["Data Acquisition", "Problem Scoping", "Modeling", "Evaluation"],
-      "answer": [1],
-      "explanation": "The first step in the AI Project Cycle is Problem Scoping, where students identify the problem, set goals, and brainstorm solutions.",
-      "type": "singleSelect"
-    },
-    {
-      "question": "Which activity is recommended to understand AI ethics?",
-      "options": ["Playing the AI Game", "Exploring the Moral Machine", "Creating a Python program", "Analyzing statistical data"],
-      "answer": [1],
-      "explanation": "The Moral Machine activity helps students understand the ethical concerns and dilemmas associated with AI by simulating real-world scenarios.",
-      "type": "singleSelect"
-    },
-    {
-      "question": "What is the purpose of data visualization in AI?",
-      "options": ["To collect data", "To store data securely", "To represent data graphically for better understanding", "To delete unnecessary data"],
-      "answer": [2],
-      "explanation": "Data visualization represents data graphically, making it easier to understand patterns, trends, and insights.",
-      "type": "singleSelect"
-    },
-    {
-      "question": "Which of the following is an example of a rule-based model in AI?",
-      "options": [
-        "A chatbot trained on past conversations",
-        "A program that follows predefined rules to respond",
-        "A neural network for image recognition",
-        "A generative AI model"
-      ],
-      "answer": [1],
-      "explanation": "A rule-based model follows predefined rules to respond to inputs, unlike learning-based models that adapt based on data.",
-      "type": "singleSelect"
-    },
-    {
-      "question": "What is the role of Python in the AI curriculum?",
-      "options": [
-        "To teach advanced machine learning algorithms",
-        "To introduce basic programming skills in a user-friendly format",
-        "To focus on web development",
-        "To replace traditional programming languages"
-      ],
-      "answer": [1],
-      "explanation": "Python is introduced in the curriculum to teach basic programming skills in a simple and user-friendly way, making it accessible for beginners.",
+      "explanation": "Generative AI refers to models that create new content, such as images, text, or music, based on input data.",
       "type": "singleSelect"
     },
     {
@@ -79,87 +27,99 @@
       "type": "singleSelect"
     },
     {
-      "question": "What is the importance of Math in AI?",
+      "question": "What is the primary function of a Generative Adversarial Network (GAN)?",
       "options": [
-        "It is not required for AI",
-        "It helps in analyzing data and finding patterns",
-        "It is only used for programming",
-        "It is used to create hardware for AI"
+        "To classify data",
+        "To generate new data by training two neural networks",
+        "To predict outcomes",
+        "To optimize algorithms"
       ],
       "answer": [1],
-      "explanation": "Math is crucial in AI for analyzing data, finding patterns, and building models using concepts like statistics, probability, and linear algebra.",
+      "explanation": "GANs consist of two neural networks, a generator and a discriminator, that work together to create realistic data.",
       "type": "singleSelect"
     },
     {
-      "question": "Which of the following is an example of AI bias?",
+      "question": "Which of the following is a popular Generative AI model for text generation?",
       "options": [
-        "A program that crashes frequently",
-        "A facial recognition system that performs poorly on certain demographics",
-        "A chatbot that provides accurate answers",
-        "A program that uses too much memory"
+        "ResNet",
+        "GPT (Generative Pre-trained Transformer)",
+        "YOLO",
+        "AlexNet"
       ],
       "answer": [1],
-      "explanation": "AI bias occurs when a system performs unfairly or inaccurately for certain groups due to biased training data or algorithms.",
+      "explanation": "GPT (Generative Pre-trained Transformer) is widely used for text generation tasks in Generative AI.",
       "type": "singleSelect"
     },
     {
-      "question": "What is the purpose of the 4Ws Problem Canvas in the AI Project Cycle?",
+      "question": "What is the role of the discriminator in a GAN?",
       "options": [
-        "To visualize data",
-        "To identify stakeholders and define the problem",
-        "To evaluate the AI model",
-        "To deploy the AI solution"
+        "To generate new data",
+        "To classify data as real or fake",
+        "To optimize the generator",
+        "To predict future outcomes"
       ],
       "answer": [1],
-      "explanation": "The 4Ws Problem Canvas helps students identify stakeholders, define the problem, and set goals for the AI project.",
+      "explanation": "The discriminator in a GAN evaluates the data generated by the generator and classifies it as real or fake.",
       "type": "singleSelect"
     },
     {
-      "question": "Which of the following tools can be used to create an AI model in the curriculum?",
+      "question": "Which of the following is a key application of Generative AI?",
       "options": [
-        "Teachable Machine",
-        "Microsoft Excel",
-        "Google Docs",
-        "Adobe Photoshop"
+        "Predicting stock prices",
+        "Creating realistic images and videos",
+        "Analyzing customer data",
+        "Optimizing supply chains"
+      ],
+      "answer": [1],
+      "explanation": "Generative AI is commonly used to create realistic images, videos, and other forms of content.",
+      "type": "singleSelect"
+    },
+    {
+      "question": "What is the difference between Generative AI and Predictive AI?",
+      "options": [
+        "Generative AI creates new content, while Predictive AI forecasts outcomes",
+        "Generative AI analyzes data, while Predictive AI generates new data",
+        "Generative AI focuses on robotics, while Predictive AI focuses on automation",
+        "Generative AI is less advanced than Predictive AI"
       ],
       "answer": [0],
-      "explanation": "Teachable Machine is a tool that allows students to create AI models easily by training them on labeled data.",
+      "explanation": "Generative AI creates new content, such as images or text, while Predictive AI forecasts outcomes based on existing data.",
       "type": "singleSelect"
     },
     {
-      "question": "What is the significance of Sustainable Development Goals (SDGs) in AI projects?",
+      "question": "Which of the following is an ethical concern related to Generative AI?",
       "options": [
-        "They are unrelated to AI",
-        "They provide themes for AI projects to address real-world problems",
-        "They focus only on environmental issues",
-        "They are used to evaluate AI models"
+        "High computational cost",
+        "Creation of fake or misleading content",
+        "Limited applications in real-world scenarios",
+        "Difficulty in training models"
       ],
       "answer": [1],
-      "explanation": "SDGs provide themes for AI projects, encouraging students to address real-world problems like poverty, education, and climate change.",
+      "explanation": "Generative AI can be used to create fake or misleading content, raising ethical concerns about its misuse.",
       "type": "singleSelect"
     },
     {
-      "question": "Which of the following is a practical activity for learning Python in the curriculum?",
+      "question": "What is the purpose of training a Generative AI model?",
       "options": [
-        "Creating a chatbot using advanced libraries",
-        "Writing a program to calculate the area of a rectangle",
-        "Building a neural network",
-        "Developing a web application"
+        "To classify data",
+        "To generate new and realistic data",
+        "To optimize algorithms",
+        "To predict future outcomes"
       ],
       "answer": [1],
-      "explanation": "One of the practical activities in the curriculum is writing a Python program to calculate the area of a rectangle, which helps students learn basic programming concepts.",
+      "explanation": "The purpose of training a Generative AI model is to enable it to generate new and realistic data based on input.",
       "type": "singleSelect"
     },
     {
-      "question": "What is the purpose of the AI Game activity in the curriculum?",
+      "question": "Which of the following is a challenge in training Generative AI models?",
       "options": [
-        "To teach advanced AI algorithms",
-        "To help students understand AI domains through interactive games",
-        "To evaluate students' programming skills",
-        "To create AI models"
+        "Lack of data",
+        "High computational requirements",
+        "Limited applications",
+        "Inability to analyze data"
       ],
       "answer": [1],
-      "explanation": "The AI Game activity introduces students to AI domains like Data, Computer Vision, and NLP through fun and interactive games.",
+      "explanation": "Training Generative AI models often requires significant computational resources, which can be a challenge.",
       "type": "singleSelect"
     }
   ]

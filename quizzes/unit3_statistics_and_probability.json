@@ -3,163 +3,73 @@
   "type": "quiz",
   "quiz": [
     {
-      "question": "What is the primary objective of the AI curriculum for Class IX?",
-      "options": [
-        "To teach advanced programming languages",
-        "To develop readiness for understanding and appreciating AI and its applications",
-        "To focus solely on data science",
-        "To prepare students for competitive exams"
-      ],
+      "question": "What is the mean of the numbers \\( 4, 8, 12, 16 \\)?",
+      "options": ["10", "12", "14", "15"],
       "answer": [1],
-      "explanation": "The primary objective of the AI curriculum is to help students understand and appreciate Artificial Intelligence and its applications in daily life through interactive and hands-on learning.",
+      "explanation": "The mean is calculated by summing the numbers and dividing by the count: \\( \\frac{40}{4} = 12 \\).",
       "type": "singleSelect"
     },
     {
-      "question": "Which of the following is NOT one of the three domains of AI introduced in the curriculum?",
-      "options": ["Data", "Computer Vision", "Natural Language Processing", "Quantum Computing"],
-      "answer": [3],
-      "explanation": "The three domains of AI introduced in the curriculum are Data, Computer Vision, and Natural Language Processing. Quantum Computing is not included in this curriculum.",
-      "type": "singleSelect"
-    },
-    {
-      "question": "What is the first step in the AI Project Cycle?",
-      "options": ["Data Acquisition", "Problem Scoping", "Modeling", "Evaluation"],
-      "answer": [1],
-      "explanation": "The first step in the AI Project Cycle is Problem Scoping, where students identify the problem, set goals, and brainstorm solutions.",
-      "type": "singleSelect"
-    },
-    {
-      "question": "Which activity is recommended to understand AI ethics?",
-      "options": ["Playing the AI Game", "Exploring the Moral Machine", "Creating a Python program", "Analyzing statistical data"],
-      "answer": [1],
-      "explanation": "The Moral Machine activity helps students understand the ethical concerns and dilemmas associated with AI by simulating real-world scenarios.",
-      "type": "singleSelect"
-    },
-    {
-      "question": "What is the purpose of data visualization in AI?",
-      "options": ["To collect data", "To store data securely", "To represent data graphically for better understanding", "To delete unnecessary data"],
-      "answer": [2],
-      "explanation": "Data visualization represents data graphically, making it easier to understand patterns, trends, and insights.",
-      "type": "singleSelect"
-    },
-    {
-      "question": "Which of the following is an example of a rule-based model in AI?",
-      "options": [
-        "A chatbot trained on past conversations",
-        "A program that follows predefined rules to respond",
-        "A neural network for image recognition",
-        "A generative AI model"
-      ],
-      "answer": [1],
-      "explanation": "A rule-based model follows predefined rules to respond to inputs, unlike learning-based models that adapt based on data.",
-      "type": "singleSelect"
-    },
-    {
-      "question": "What is the role of Python in the AI curriculum?",
-      "options": [
-        "To teach advanced machine learning algorithms",
-        "To introduce basic programming skills in a user-friendly format",
-        "To focus on web development",
-        "To replace traditional programming languages"
-      ],
-      "answer": [1],
-      "explanation": "Python is introduced in the curriculum to teach basic programming skills in a simple and user-friendly way, making it accessible for beginners.",
-      "type": "singleSelect"
-    },
-    {
-      "question": "Which of the following is an example of Generative AI?",
-      "options": [
-        "A program that calculates the sum of two numbers",
-        "A tool that creates realistic images from text descriptions",
-        "A chatbot that answers predefined questions",
-        "A spreadsheet software for data analysis"
-      ],
-      "answer": [1],
-      "explanation": "Generative AI refers to models that can create new content, such as realistic images, based on input data.",
-      "type": "singleSelect"
-    },
-    {
-      "question": "What is the importance of Math in AI?",
-      "options": [
-        "It is not required for AI",
-        "It helps in analyzing data and finding patterns",
-        "It is only used for programming",
-        "It is used to create hardware for AI"
-      ],
-      "answer": [1],
-      "explanation": "Math is crucial in AI for analyzing data, finding patterns, and building models using concepts like statistics, probability, and linear algebra.",
-      "type": "singleSelect"
-    },
-    {
-      "question": "Which of the following is an example of AI bias?",
-      "options": [
-        "A program that crashes frequently",
-        "A facial recognition system that performs poorly on certain demographics",
-        "A chatbot that provides accurate answers",
-        "A program that uses too much memory"
-      ],
-      "answer": [1],
-      "explanation": "AI bias occurs when a system performs unfairly or inaccurately for certain groups due to biased training data or algorithms.",
-      "type": "singleSelect"
-    },
-    {
-      "question": "What is the purpose of the 4Ws Problem Canvas in the AI Project Cycle?",
-      "options": [
-        "To visualize data",
-        "To identify stakeholders and define the problem",
-        "To evaluate the AI model",
-        "To deploy the AI solution"
-      ],
-      "answer": [1],
-      "explanation": "The 4Ws Problem Canvas helps students identify stakeholders, define the problem, and set goals for the AI project.",
-      "type": "singleSelect"
-    },
-    {
-      "question": "Which of the following tools can be used to create an AI model in the curriculum?",
-      "options": [
-        "Teachable Machine",
-        "Microsoft Excel",
-        "Google Docs",
-        "Adobe Photoshop"
-      ],
+      "question": "Which of the following is a measure of central tendency?",
+      "options": ["Mean", "Variance", "Standard Deviation", "Probability"],
       "answer": [0],
-      "explanation": "Teachable Machine is a tool that allows students to create AI models easily by training them on labeled data.",
+      "explanation": "Mean is a measure of central tendency, representing the average value of a dataset.",
       "type": "singleSelect"
     },
     {
-      "question": "What is the significance of Sustainable Development Goals (SDGs) in AI projects?",
-      "options": [
-        "They are unrelated to AI",
-        "They provide themes for AI projects to address real-world problems",
-        "They focus only on environmental issues",
-        "They are used to evaluate AI models"
-      ],
-      "answer": [1],
-      "explanation": "SDGs provide themes for AI projects, encouraging students to address real-world problems like poverty, education, and climate change.",
+      "question": "What is the mode of the dataset \\( 3, 7, 3, 9, 3, 5 \\)?",
+      "options": ["3", "7", "9", "5"],
+      "answer": [0],
+      "explanation": "The mode is the number that appears most frequently in a dataset. Here, 3 appears three times.",
       "type": "singleSelect"
     },
     {
-      "question": "Which of the following is a practical activity for learning Python in the curriculum?",
-      "options": [
-        "Creating a chatbot using advanced libraries",
-        "Writing a program to calculate the area of a rectangle",
-        "Building a neural network",
-        "Developing a web application"
-      ],
-      "answer": [1],
-      "explanation": "One of the practical activities in the curriculum is writing a Python program to calculate the area of a rectangle, which helps students learn basic programming concepts.",
+      "question": "What is the probability of rolling a 6 on a fair six-sided die?",
+      "options": ["\\( \\frac{1}{6} \\)", "\\( \\frac{1}{3} \\)", "\\( \\frac{1}{2} \\)", "\\( \\frac{1}{12} \\)"],
+      "answer": [0],
+      "explanation": "Each side of a six-sided die has an equal chance, so the probability of rolling a 6 is \\( \\frac{1}{6} \\).",
       "type": "singleSelect"
     },
     {
-      "question": "What is the purpose of the AI Game activity in the curriculum?",
-      "options": [
-        "To teach advanced AI algorithms",
-        "To help students understand AI domains through interactive games",
-        "To evaluate students' programming skills",
-        "To create AI models"
-      ],
+      "question": "Which of the following is an example of a discrete random variable?",
+      "options": ["Height of students", "Number of books in a library", "Temperature in a city", "Time taken to complete a task"],
       "answer": [1],
-      "explanation": "The AI Game activity introduces students to AI domains like Data, Computer Vision, and NLP through fun and interactive games.",
+      "explanation": "A discrete variable has specific countable outcomes, like number of books.",
+      "type": "singleSelect"
+    },
+    {
+      "question": "What is the median of the dataset \\( 5, 10, 15, 20, 25 \\)?",
+      "options": ["10", "15", "20", "25"],
+      "answer": [1],
+      "explanation": "The median is the middle value of the ordered dataset. Here, it's 15.",
+      "type": "singleSelect"
+    },
+    {
+      "question": "What is the variance of the dataset \\( 2, 4, 6, 8 \\)?",
+      "options": ["5", "6", "7", "8"],
+      "answer": [0],
+      "explanation": "Mean is 5. Variance is \\( \\frac{(2-5)^2 + (4-5)^2 + (6-5)^2 + (8-5)^2}{4} = 5 \\).",
+      "type": "singleSelect"
+    },
+    {
+      "question": "What is the probability of flipping a coin and getting heads?",
+      "options": ["\\( \\frac{1}{2} \\)", "\\( \\frac{1}{3} \\)", "\\( \\frac{1}{4} \\)", "\\( \\frac{1}{6} \\)"],
+      "answer": [0],
+      "explanation": "A coin has two equally likely outcomes, so the probability of heads is \\( \\frac{1}{2} \\).",
+      "type": "singleSelect"
+    },
+    {
+      "question": "Which graph is best suited to show frequencies of categories?",
+      "options": ["Pie Chart", "Bar Graph", "Line Graph", "Histogram"],
+      "answer": [1],
+      "explanation": "Bar graphs are excellent for representing the frequency of distinct categories.",
+      "type": "singleSelect"
+    },
+    {
+      "question": "What is the interquartile range (IQR) of \\( 1, 3, 5, 7, 9 \\)?",
+      "options": ["3", "4", "5", "6"],
+      "answer": [1],
+      "explanation": "Q1 = 3, Q3 = 7, so IQR = Q3 - Q1 = 4.",
       "type": "singleSelect"
     }
   ]

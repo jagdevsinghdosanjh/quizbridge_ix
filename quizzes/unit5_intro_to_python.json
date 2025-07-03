@@ -3,163 +3,133 @@
   "type": "quiz",
   "quiz": [
     {
-      "question": "What is the primary objective of the AI curriculum for Class IX?",
+      "question": "What is Python?",
       "options": [
-        "To teach advanced programming languages",
-        "To develop readiness for understanding and appreciating AI and its applications",
-        "To focus solely on data science",
-        "To prepare students for competitive exams"
+        "A type of snake",
+        "A high-level programming language",
+        "A database management system",
+        "An operating system"
       ],
       "answer": [1],
-      "explanation": "The primary objective of the AI curriculum is to help students understand and appreciate Artificial Intelligence and its applications in daily life through interactive and hands-on learning.",
+      "explanation": "Python is a high-level, interpreted programming language known for its simplicity and readability.",
       "type": "singleSelect"
     },
     {
-      "question": "Which of the following is NOT one of the three domains of AI introduced in the curriculum?",
-      "options": ["Data", "Computer Vision", "Natural Language Processing", "Quantum Computing"],
-      "answer": [3],
-      "explanation": "The three domains of AI introduced in the curriculum are Data, Computer Vision, and Natural Language Processing. Quantum Computing is not included in this curriculum.",
-      "type": "singleSelect"
-    },
-    {
-      "question": "What is the first step in the AI Project Cycle?",
-      "options": ["Data Acquisition", "Problem Scoping", "Modeling", "Evaluation"],
+      "question": "Which of the following is a valid Python variable name?",
+      "options": [
+        "2variable",
+        "variable_name",
+        "variable-name",
+        "variable name"
+      ],
       "answer": [1],
-      "explanation": "The first step in the AI Project Cycle is Problem Scoping, where students identify the problem, set goals, and brainstorm solutions.",
+      "explanation": "Python variable names cannot start with numbers or contain hyphens or spaces. 'variable_name' is valid.",
       "type": "singleSelect"
     },
     {
-      "question": "Which activity is recommended to understand AI ethics?",
-      "options": ["Playing the AI Game", "Exploring the Moral Machine", "Creating a Python program", "Analyzing statistical data"],
+      "question": "What is the output of the following code: print(2 + 3 * 4)?",
+      "options": ["20", "14", "24", "11"],
       "answer": [1],
-      "explanation": "The Moral Machine activity helps students understand the ethical concerns and dilemmas associated with AI by simulating real-world scenarios.",
+      "explanation": "Python uses operator precedence: 3 * 4 = 12, then 2 + 12 = 14.",
       "type": "singleSelect"
     },
     {
-      "question": "What is the purpose of data visualization in AI?",
-      "options": ["To collect data", "To store data securely", "To represent data graphically for better understanding", "To delete unnecessary data"],
+      "question": "Which of the following is used to create a comment in Python?",
+      "options": ["//", "#", "/* */", "<!-- -->"],
+      "answer": [1],
+      "explanation": "Python uses the hash symbol (#) for comments.",
+      "type": "singleSelect"
+    },
+    {
+      "question": "What is the correct way to define a function in Python?",
+      "options": [
+        "function myFunc():",
+        "def myFunc():",
+        "create myFunc():",
+        "function:myFunc()"
+      ],
+      "answer": [1],
+      "explanation": "In Python, you define functions using 'def'.",
+      "type": "singleSelect"
+    },
+    {
+      "question": "Which data type is immutable in Python?",
+      "options": ["List", "Dictionary", "Tuple", "Set"],
       "answer": [2],
-      "explanation": "Data visualization represents data graphically, making it easier to understand patterns, trends, and insights.",
+      "explanation": "Tuples are immutable, meaning their contents can't be changed.",
       "type": "singleSelect"
     },
     {
-      "question": "Which of the following is an example of a rule-based model in AI?",
+      "question": "What is the output of print(type(42))?",
       "options": [
-        "A chatbot trained on past conversations",
-        "A program that follows predefined rules to respond",
-        "A neural network for image recognition",
-        "A generative AI model"
-      ],
-      "answer": [1],
-      "explanation": "A rule-based model follows predefined rules to respond to inputs, unlike learning-based models that adapt based on data.",
-      "type": "singleSelect"
-    },
-    {
-      "question": "What is the role of Python in the AI curriculum?",
-      "options": [
-        "To teach advanced machine learning algorithms",
-        "To introduce basic programming skills in a user-friendly format",
-        "To focus on web development",
-        "To replace traditional programming languages"
-      ],
-      "answer": [1],
-      "explanation": "Python is introduced in the curriculum to teach basic programming skills in a simple and user-friendly way, making it accessible for beginners.",
-      "type": "singleSelect"
-    },
-    {
-      "question": "Which of the following is an example of Generative AI?",
-      "options": [
-        "A program that calculates the sum of two numbers",
-        "A tool that creates realistic images from text descriptions",
-        "A chatbot that answers predefined questions",
-        "A spreadsheet software for data analysis"
-      ],
-      "answer": [1],
-      "explanation": "Generative AI refers to models that can create new content, such as realistic images, based on input data.",
-      "type": "singleSelect"
-    },
-    {
-      "question": "What is the importance of Math in AI?",
-      "options": [
-        "It is not required for AI",
-        "It helps in analyzing data and finding patterns",
-        "It is only used for programming",
-        "It is used to create hardware for AI"
-      ],
-      "answer": [1],
-      "explanation": "Math is crucial in AI for analyzing data, finding patterns, and building models using concepts like statistics, probability, and linear algebra.",
-      "type": "singleSelect"
-    },
-    {
-      "question": "Which of the following is an example of AI bias?",
-      "options": [
-        "A program that crashes frequently",
-        "A facial recognition system that performs poorly on certain demographics",
-        "A chatbot that provides accurate answers",
-        "A program that uses too much memory"
-      ],
-      "answer": [1],
-      "explanation": "AI bias occurs when a system performs unfairly or inaccurately for certain groups due to biased training data or algorithms.",
-      "type": "singleSelect"
-    },
-    {
-      "question": "What is the purpose of the 4Ws Problem Canvas in the AI Project Cycle?",
-      "options": [
-        "To visualize data",
-        "To identify stakeholders and define the problem",
-        "To evaluate the AI model",
-        "To deploy the AI solution"
-      ],
-      "answer": [1],
-      "explanation": "The 4Ws Problem Canvas helps students identify stakeholders, define the problem, and set goals for the AI project.",
-      "type": "singleSelect"
-    },
-    {
-      "question": "Which of the following tools can be used to create an AI model in the curriculum?",
-      "options": [
-        "Teachable Machine",
-        "Microsoft Excel",
-        "Google Docs",
-        "Adobe Photoshop"
+        "<class 'int'>",
+        "<class 'float'>",
+        "<class 'str'>",
+        "<class 'bool'>"
       ],
       "answer": [0],
-      "explanation": "Teachable Machine is a tool that allows students to create AI models easily by training them on labeled data.",
+      "explanation": "42 is an integer, so type(42) returns <class 'int'>.",
       "type": "singleSelect"
     },
     {
-      "question": "What is the significance of Sustainable Development Goals (SDGs) in AI projects?",
-      "options": [
-        "They are unrelated to AI",
-        "They provide themes for AI projects to address real-world problems",
-        "They focus only on environmental issues",
-        "They are used to evaluate AI models"
-      ],
-      "answer": [1],
-      "explanation": "SDGs provide themes for AI projects, encouraging students to address real-world problems like poverty, education, and climate change.",
+      "question": "Which of the following is NOT a Python keyword?",
+      "options": ["if", "else", "loop", "def"],
+      "answer": [2],
+      "explanation": "'loop' is not a Python keyword.",
       "type": "singleSelect"
     },
     {
-      "question": "Which of the following is a practical activity for learning Python in the curriculum?",
-      "options": [
-        "Creating a chatbot using advanced libraries",
-        "Writing a program to calculate the area of a rectangle",
-        "Building a neural network",
-        "Developing a web application"
-      ],
+      "question": "What is the output of print('Hello' + 'World')?",
+      "options": ["Hello World", "HelloWorld", "Hello+World", "Error"],
       "answer": [1],
-      "explanation": "One of the practical activities in the curriculum is writing a Python program to calculate the area of a rectangle, which helps students learn basic programming concepts.",
+      "explanation": "'+' concatenates strings in Python. The result is 'HelloWorld'.",
       "type": "singleSelect"
     },
     {
-      "question": "What is the purpose of the AI Game activity in the curriculum?",
-      "options": [
-        "To teach advanced AI algorithms",
-        "To help students understand AI domains through interactive games",
-        "To evaluate students' programming skills",
-        "To create AI models"
-      ],
+      "question": "Which construct is used to handle exceptions in Python?",
+      "options": ["if-else", "try-except", "for-while", "case-switch"],
       "answer": [1],
-      "explanation": "The AI Game activity introduces students to AI domains like Data, Computer Vision, and NLP through fun and interactive games.",
+      "explanation": "Python uses try-except blocks to handle exceptions.",
+      "type": "singleSelect"
+    },
+    {
+      "question": "What does len([1, 2, 3, 4]) return?",
+      "options": ["3", "4", "5", "Error"],
+      "answer": [1],
+      "explanation": "len() returns the number of elements in a list—in this case, 4.",
+      "type": "singleSelect"
+    },
+    {
+      "question": "Which of the following is mutable in Python?",
+      "options": ["String", "Tuple", "List", "Integer"],
+      "answer": [2],
+      "explanation": "Lists are mutable and can be changed after creation.",
+      "type": "singleSelect"
+    },
+    {
+      "question": "What does the range() function do?",
+      "options": [
+        "Generates a random number",
+        "Creates a string of numbers",
+        "Returns a sequence of numbers",
+        "Evaluates a condition"
+      ],
+      "answer": [2],
+      "explanation": "range() returns a sequence of numbers, typically used for looping.",
+      "type": "singleSelect"
+    },
+    {
+      "question": "What is the output of print(10 // 3)?",
+      "options": ["3.33", "3", "4", "Error"],
+      "answer": [1],
+      "explanation": "'//' performs floor division. 10 // 3 = 3.",
+      "type": "singleSelect"
+    },
+    {
+      "question": "Which library is widely used for data analysis in Python?",
+      "options": ["NumPy", "Pandas", "Matplotlib", "All of the above"],
+      "answer": [3],
+      "explanation": "NumPy, Pandas, and Matplotlib are popular Python libraries for data science.",
       "type": "singleSelect"
     }
   ]
